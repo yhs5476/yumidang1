@@ -159,7 +159,7 @@ fun MannerScoreBar(
                 )
             }
             Text(
-                text = "${"%.1f".format(score)} Brix",
+                text = "${score.toInt()}",
                 fontSize = 13.sp,
                 fontWeight = FontWeight.Bold,
                 color = color
@@ -320,7 +320,7 @@ fun SafetyRulesDialog(
                     "1. 첫 만남은 카페·역 로비 등 밝고 사람이 많은 공공장소에서 갖습니다.",
                     "2. 플랫폼 외 메신저로의 이동이나 계좌 직접 송금 요구는 단호히 거절하세요.",
                     "3. 만남 전 지인이나 가족에게 동행 일정 및 장소를 미리 공유해 두세요.",
-                    "4. 상대방의 공개 프로필, KYC 인증 마크 및 당도(Brix)를 사전에 확인하세요.",
+                    "4. 상대방의 공개 프로필, KYC 인증 마크 및 당도 수치를 사전에 확인하세요.",
                     "5. 위급 상황 발생 시 즉시 112 경찰 또는 119로 신고하세요."
                 )
                 rules.forEach { rule ->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFDFB</color>
+    <color name="primary">#E05D44</color>
+    <color name="primary_dark">#B93E27</color>
+    <color name="secondary">#E0876A</color>
+    <string name="app_name">유미당</string>
+    <style name="Theme.Yumidang" parent="android:Theme.Material.Light.NoActionBar"/>
+</resources>
