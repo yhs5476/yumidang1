@@ -147,19 +147,19 @@ fun MannerScoreBar(
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(
                     imageVector = Icons.Default.Thermostat,
-                    contentDescription = "매너온도",
+                    contentDescription = "당도",
                     tint = color,
                     modifier = Modifier.size(16.dp)
                 )
                 Spacer(modifier = Modifier.width(2.dp))
                 Text(
-                    text = "매너온도",
+                    text = "당도",
                     fontSize = 12.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
             Text(
-                text = "${"%.1f".format(score)}℃",
+                text = "${"%.1f".format(score)} Brix",
                 fontSize = 13.sp,
                 fontWeight = FontWeight.Bold,
                 color = color
@@ -241,7 +241,7 @@ fun SafetyNoticeCard(
             .fillMaxWidth()
             .testTag("safety_notice_card"),
         shape = RoundedCornerShape(14.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF7ED))
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5))
     ) {
         Row(
             modifier = Modifier
@@ -252,13 +252,13 @@ fun SafetyNoticeCard(
             Box(
                 modifier = Modifier
                     .size(36.dp)
-                    .background(Color(0xFFFFEDD5), CircleShape),
+                    .background(Color(0xFFE1BEE7), CircleShape),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
                     imageVector = Icons.Default.Security,
                     contentDescription = null,
-                    tint = Color(0xFFC2410C),
+                    tint = Color(0xFF7B1FA2),
                     modifier = Modifier.size(20.dp)
                 )
             }
@@ -268,12 +268,12 @@ fun SafetyNoticeCard(
                     text = "유미당 안심 동행 수칙",
                     fontWeight = FontWeight.Bold,
                     fontSize = 14.sp,
-                    color = Color(0xFF9A3412)
+                    color = Color(0xFF4A148C)
                 )
                 Text(
                     text = "낮 시간, 공개된 공공장소에서 만나요. 사전 송금 요구나 외부 연락처 유도는 거절하세요.",
                     fontSize = 12.sp,
-                    color = Color(0xFF7C2D12),
+                    color = Color(0xFF6A1B9A),
                     lineHeight = 16.sp
                 )
             }
@@ -286,7 +286,7 @@ fun SafetyNoticeCard(
                     text = "수칙보기",
                     fontWeight = FontWeight.Bold,
                     fontSize = 12.sp,
-                    color = Color(0xFFC2410C)
+                    color = Color(0xFF7B1FA2)
                 )
             }
         }
@@ -320,7 +320,7 @@ fun SafetyRulesDialog(
                     "1. 첫 만남은 카페·역 로비 등 밝고 사람이 많은 공공장소에서 갖습니다.",
                     "2. 플랫폼 외 메신저로의 이동이나 계좌 직접 송금 요구는 단호히 거절하세요.",
                     "3. 만남 전 지인이나 가족에게 동행 일정 및 장소를 미리 공유해 두세요.",
-                    "4. 상대방의 공개 프로필, KYC 인증 마크 및 매너온도를 사전에 확인하세요.",
+                    "4. 상대방의 공개 프로필, KYC 인증 마크 및 당도(Brix)를 사전에 확인하세요.",
                     "5. 위급 상황 발생 시 즉시 112 경찰 또는 119로 신고하세요."
                 )
                 rules.forEach { rule ->

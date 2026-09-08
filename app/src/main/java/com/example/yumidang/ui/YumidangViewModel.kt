@@ -273,7 +273,7 @@ class YumidangViewModel(
     ) {
         repository.submitReview(requestId, targetUserId, targetUserName, rating, tags, comment)
         _reviewingRequest.value = null
-        showMessage("${targetUserName}님과의 상호 평가가 완료되었습니다. 매너온도가 갱신되었습니다.")
+        showMessage("${targetUserName}님과의 상호 평가가 완료되었습니다. 당도(Brix)가 갱신되었습니다.")
     }
 
     // Pro Offers

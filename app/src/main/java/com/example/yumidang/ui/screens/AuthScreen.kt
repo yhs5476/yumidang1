@@ -123,13 +123,12 @@ fun AuthScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.hero_companion),
-                    contentDescription = "유미당 동행 일러스트",
+                    painter = painterResource(id = R.drawable.ic_launcher_fg_img),
+                    contentDescription = "유미당 앱 로고",
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .height(130.dp)
-                        .clip(RoundedCornerShape(12.dp)),
-                    contentScale = ContentScale.Crop
+                        .size(100.dp)
+                        .clip(RoundedCornerShape(20.dp)),
+                    contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(

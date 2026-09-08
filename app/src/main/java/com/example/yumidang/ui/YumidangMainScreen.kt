@@ -91,7 +91,7 @@ fun YumidangMainScreen(
                         colors = NavigationBarItemDefaults.colors(
                             selectedIconColor = CoralPrimary,
                             selectedTextColor = CoralPrimary,
-                            indicatorColor = Color(0xFFFFECEF)
+                            indicatorColor = Color(0xFFEDE7F6)
                         ),
                         modifier = Modifier.testTag("nav_home")
                     )
@@ -103,7 +103,7 @@ fun YumidangMainScreen(
                         colors = NavigationBarItemDefaults.colors(
                             selectedIconColor = CoralPrimary,
                             selectedTextColor = CoralPrimary,
-                            indicatorColor = Color(0xFFFFECEF)
+                            indicatorColor = Color(0xFFEDE7F6)
                         ),
                         modifier = Modifier.testTag("nav_pro")
                     )
@@ -115,7 +115,7 @@ fun YumidangMainScreen(
                         colors = NavigationBarItemDefaults.colors(
                             selectedIconColor = CoralPrimary,
                             selectedTextColor = CoralPrimary,
-                            indicatorColor = Color(0xFFFFECEF)
+                            indicatorColor = Color(0xFFEDE7F6)
                         ),
                         modifier = Modifier.testTag("nav_matches")
                     )
@@ -127,7 +127,7 @@ fun YumidangMainScreen(
                         colors = NavigationBarItemDefaults.colors(
                             selectedIconColor = CoralPrimary,
                             selectedTextColor = CoralPrimary,
-                            indicatorColor = Color(0xFFFFECEF)
+                            indicatorColor = Color(0xFFEDE7F6)
                         ),
                         modifier = Modifier.testTag("nav_profile")
                     )
