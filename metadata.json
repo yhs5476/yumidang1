@@ -1,0 +1,8 @@
+{
+  "name": "유미당",
+  "description": "신뢰 기반 1:1 일상 동행 매칭 및 상호 평가 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
